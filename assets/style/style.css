@@ -1,9 +1,9 @@
 :root {
-  --iconic-color: #8c6f90;
+  --iconic-color: #655068;
   --text-color1: #908c6f;
   --text-color2: #f8fca1;
   --headings: #6f808c;
-  --background1: #89e48f;
+  --background1: #89e4d7;
   --background2: #6fb974;
   --background3: #89e4d7;
   --text-icon: "Bellefair", serif;
@@ -11,22 +11,27 @@
   --text-headings2:"Source Code Pro", monospace;
 }
 
-body {
-  
-  width: 100vw;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  margin: 0%;
+  padding: 0%;
+  max-width: 100vw;
   height: auto;
 }
 
 /* Header */
 header {
   display: flex;
-  line-height: 1; 
   flex-direction: row;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  padding: 1% 1.25%;
+  justify-content: space-around;
+  align-content: space-around;
   width: 100%;
-  height: 13%;
+  height:auto;
   background-color: var(--background1);
 }
 header section h1{
@@ -42,8 +47,9 @@ header section h1{
 
 header section ul {
   display: inline-flex;
-  padding-top: 3%;
-  
+  padding-top:8%;
+  text-decoration: none;
+  list-style: none;
 }
 
 header section ul li {
@@ -61,7 +67,11 @@ a:link {
 section ul > li >  a {
   flex-direction: row;
   text-decoration: none;
+  font-weight: bolder;
   font-family:  var(--text-headings2);
+}
+.btn{
+    padding: 2%;
 }
 .left button,
 .btn > button {
@@ -70,10 +80,11 @@ section ul > li >  a {
   outline: none;
   text-decoration: none;
   border: none;
+  margin-top:3%;
   padding: 1em 1.85em;
   border-radius: 3px;
   font-size: 1.35em;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 3px;
   font-family: var(--text-headings2);
 }
@@ -183,21 +194,25 @@ section ul > li >  a {
     font-weight: bold;
     padding: 5%;
     font-family: var(--text-icon);
-    color: var(--iconic-color);
+    color: black;
 }
+
+
 
 footer{
     background-color: var(--background1);
     display: flex;
     flex-direction: column;
     line-height: 1.3;
-    padding: 2% 1.75%;
+    padding: 2% 1.45%;
+    width: 100%;
 }
 
 footer h1{
     font-size: 3em;
     padding:0.55%;
     font-family: var(--text-icon);
+    color: black;
 }
 footer p {  
     font-size: 1.75rem;
