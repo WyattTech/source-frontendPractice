@@ -205,3 +205,7 @@ footer p {
     font-family: serif;
     font-weight:lighter;
 }
+
+label{
+    display: none;
+}
